@@ -13,7 +13,7 @@ function AudioPlayer() {
         <div key={index} className="mb-4">
           <AudioFile audio={audio} />
           {console.log(audio.dropdownFiles)}
-          <Dropdown audioFiles={audio.mainAudioFile} />
+          <Dropdown audioFiles={audio} />
         </div>
       ))}
     </div>

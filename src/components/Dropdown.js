@@ -29,9 +29,9 @@ function Dropdown({ audioFiles }) {
           : "Open Dropdown"}
       </button>
       {isOpen === audioFiles[0]?.mainAudioFile?.id && (
-        <div className="absolute right-0 mt-2 p-2 bg-white border rounded shadow-lg">
-          <ul>
-            {audioFiles?.map((file) => (
+        <div className="right-0 mt-2 p-2 bg-white border rounded shadow-lg mb-5">
+          <ul className="mb-4">
+            {audioFiles?.dropdownFiles.map((file) => (
               <li key={file.id} className="mb-1">
                 <audio controls>
                   <source src={file.url} type="audio/mpeg" />
