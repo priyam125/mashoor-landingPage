@@ -20,3 +20,14 @@ export const openDropdownIndexSelector = selector({
     return get(openDropdownState);
   },
 });
+
+export const dropdownOpenState = atom({
+  key: "dropdownOpenState",
+  default: {}, // An empty object to store the open/close state of each dropdown
+});
+
+
+export const selectedDropdownState = atom({
+  key: 'selectedDropdownState',
+  default: -1, // Initialize with -1 to indicate no dropdown is selected initially
+});
